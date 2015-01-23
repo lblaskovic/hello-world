@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bunny time
+</title>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+</head>
+ 
+<body>
+
+<span class="bunny">
+( )_( )<br/>
+(='.'=)<br/>
+(")_(")</span>
+
+<span class="bunny" style="display:none">
+( )_( )<br/>
+(='_'=)<br/>
+c(")_(")</span>
+
+<div class="numb">0</div>
+
+<script>
+var i = 0;
+function dance() {
+   if ( i < 5000) {
+     i++;
+     $('.bunny').toggle();
+     $('.numb').text(i);
+   }
+}
+setInterval(dance, 500);
+</script>
+
+</body>
+</html>
